@@ -1,6 +1,6 @@
 ---
 name: huggingface-hub
-description: Hugging Face Hub CLI (hf) — search, download, and upload models and datasets, manage repos, query datasets with SQL, deploy inference endpoints, manage Spaces and buckets.
+description: Hugging Face Hub CLI (hf) - search, download, and upload models and datasets, manage repos, query datasets with SQL, deploy inference endpoints, manage Spaces and buckets.
 version: 1.0.0
 author: Hugging Face
 license: MIT
@@ -14,7 +14,12 @@ The `hf` command is the modern command-line interface for interacting with the H
 > **IMPORTANT:** The `hf` command replaces the now deprecated `huggingface-cli` command.
 
 ## Quick Start
-*   **Installation:** `curl -LsSf https://hf.co/cli/install.sh | bash -s`
+*   **Installation:** Download the official installer, inspect it, then run it:
+    ```bash
+    curl -LsSf https://hf.co/cli/install.sh -o /tmp/hf-cli-install.sh
+    less /tmp/hf-cli-install.sh
+    bash /tmp/hf-cli-install.sh
+    ```
 *   **Help:** Use `hf --help` to view all available functions and real-world examples.
 *   **Authentication:** Recommended via `HF_TOKEN` environment variable or the `--token` flag.
 
@@ -47,9 +52,9 @@ The `hf` command is the modern command-line interface for interacting with the H
 
 ### Datasets & Models
 *   **Datasets:** `hf datasets list`, `info`, and `parquet` (list parquet URLs).
-*   **SQL Queries:** `hf datasets sql SQL` — Execute raw SQL via DuckDB against dataset parquet URLs.
+*   **SQL Queries:** `hf datasets sql SQL` - Execute raw SQL via DuckDB against dataset parquet URLs.
 *   **Models:** `hf models list` and `info`.
-*   **Papers:** `hf papers list` — View daily papers.
+*   **Papers:** `hf papers list` - View daily papers.
 
 ### Discussions & Pull Requests (`hf discussions`)
 *   Manage the lifecycle of Hub contributions: `list`, `create`, `info`, `comment`, `close`, `reopen`, and `rename`.
